@@ -1,0 +1,32 @@
+{
+  "name": "telegram-favorite-code",
+  "displayName": "Telegram Favorite Code",
+  "description": "Send selected code to Telegram saved messages",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:telegram-favorite-code.sendCode"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "telegram-favorite-code.sendCode",
+        "title": "Send to Telegram Saved",
+        "category": "Telegram Code"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "telegram-favorite-code.sendCode",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t"
+      }
+    ]
+  }
+}
